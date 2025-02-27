@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
+
+@layer base {
+  body {
+    @apply antialiased bg-cream text-coffee;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02";
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+
+  ::selection {
+    @apply bg-brand-200/30 text-stone;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-2 bg-gradient-to-r from-brand-400 to-sage-400 text-white rounded-full 
+           hover:opacity-90 transition-opacity shadow-lg shadow-brand-500/20
+           focus:outline-none focus:ring-2 focus:ring-brand-500/50;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-brand-400 via-sage-400 to-brand-500 bg-clip-text text-transparent;
+  }
+
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-sm border border-white/20 shadow-xl shadow-brand-500/5;
+  }
+
+  .hover-card {
+    @apply transition-all duration-300 hover:border-brand-500/50 hover:shadow-lg hover:shadow-brand-500/10;
+  }
+
+  .nav-link {
+    @apply relative px-4 py-2 text-sm font-medium transition-colors;
+  }
+
+  .nav-link-active {
+    @apply text-stone font-semibold;
+  }
+
+  .nav-link-inactive {
+    @apply text-coffee hover:text-stone;
+  }
+
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-lg shadow-brand-500/5 p-6 hover:shadow-xl transition-shadow duration-300;
+  }
+}
+
+/* Custom Animations */
+@layer utilities {
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 4s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+  }
+
+  @keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.05); opacity: 0.8; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+}
+
+/* Gradient Backgrounds */
+@layer utilities {
+  .mesh-gradient {
+    background-color: theme('colors.brand.400');
+    background-image: 
+      radial-gradient(at 27% 37%, theme('colors.brand.300') 0px, transparent 50%),
+      radial-gradient(at 97% 21%, theme('colors.sage.300') 0px, transparent 50%),
+      radial-gradient(at 52% 99%, theme('colors.brand.400') 0px, transparent 50%),
+      radial-gradient(at 10% 29%, theme('colors.sage.200') 0px, transparent 50%),
+      radial-gradient(at 97% 96%, theme('colors.brand.200') 0px, transparent 50%),
+      radial-gradient(at 33% 50%, theme('colors.sage.300') 0px, transparent 50%),
+      radial-gradient(at 79% 53%, theme('colors.brand.300') 0px, transparent 50%);
+    filter: blur(100px) saturate(120%);
+    opacity: 0.2;
+  }
+}
+
+/* Scrollbar Styling */
+@layer utilities {
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-light-300;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-brand-400/50 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-brand-400/70;
+  }
+}
+
+/* PDF Viewer Customization */
+@layer components {
+  .pdf-viewer-container {
+    @apply bg-white rounded-xl shadow-xl overflow-hidden border border-light-400;
+  }
+
+  .pdf-viewer-container iframe {
+    @apply w-full min-h-[600px] bg-light-100;
+  }
+
+  .loading-spinner {
+    @apply w-12 h-12 border-4 border-brand-400 border-t-transparent rounded-full animate-spin;
+  }
+}
+
+/* Background Patterns */
+@layer utilities {
+  .dot-pattern {
+    background-image: radial-gradient(theme('colors.brand.400/10') 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+}

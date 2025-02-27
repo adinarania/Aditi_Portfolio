@@ -1,0 +1,16 @@
+About Me
+I am a dedicated communications professional with a strong foundation built through both formal education—having recently completed a Master’s in Brands at Goldsmiths with Distinction—and hands-on experience. Blending creativity with a strategic, analytical mindset, I excel in roles that require both innovative thinking, and data-driven insights.
+I am a dedicated communications professional with a strong foundation built through both formal education—having recently completed a Master’s in Brands at Goldsmiths with distinction—and through hands-on experience. I have actively pursued professional growth through HSBC and M&C Saatchi’s development programs, as well as the Taylor Bennett Foundation’s PR Mentorship Programme. Additionally, I earned the Gold Award from Goldsmiths for professional development. My background includes valuable experience gained through paid and unpaid internships, as well as published content, including my book Finding Paradise. I am eager to further my career in the communications industry and make meaningful contributions.
+Landing Page
+This portfolio showcases both creative and analytical work- sometimes both. From case studies to content created for projects and internships, this is a collection of audi- visual and textual content. 
+Comic Strip: Quit Cigarette Smoking
+For an assignment, I was tasked with creating a comic strip that educates readers about the dangers of cigarette smoking by applying psychological concepts and theories. The target audience was young students.
+Travelibro
+As a part of a university module, developed an integrated marketing communications (IMC) campaign for Travelibro, a brand focused on travel and lifestyle. Independently managed the budgeting and media planning aspects, ensuring a cohesive strategy aligned with the campaign's objectives. The project involved comprehensive considerations detailed in the accompanying document. While some ad films and videos created as part of the campaign are unavailable for sharing, the strategic framework and other considerations are outlined in the document.
+Renault: PR Strategy
+As a part of a university module, developed a comprehensive PR strategy for Renault India’s launch of a mid-segment SUV, Tornado. Personally crafted the PR Launch Plan and Budgeting, incorporating market and competitive analysis, target audience profiling, pre- and post-campaign plans, and crisis management protocols. Some project content is unavailable for sharing.
+Mohey
+As a part of a hands-on Advertising Strategy module, we conducted original market research, conducting interviews and focus group discussions to design an effective ad campaign for the brand Mohey, which primarily focuses on (Indian) bridal wear. The campaign tagline "Khushiyon ke mauke" is in Hindi, but translates to "Moments of Joy". All other information is included in the document. Some information and creatives have been omitted for privacy.
+
+Linkedin: http://www.linkedin.com/in/narania
+gmail: aditi.narania@gmail.com
