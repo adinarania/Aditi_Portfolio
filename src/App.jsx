@@ -33,6 +33,7 @@ function AppContent() {
               >
                 Aditi
               </Link>
+              <span className="ml-4 font-bold text-brand-500">aditi.narania@gmail.com</span>
             </div>
             <div className="flex items-center space-x-1">
               <NavLink to="/" currentPath={location.pathname}>
@@ -42,12 +43,14 @@ function AppContent() {
                 Portfolio
               </NavLink>
               <motion.a
-                href="mailto:aditi.narania@gmail.com"
+                href="http://www.linkedin.com/in/narania"
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="ml-4 px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-brand-400 to-sage-400 rounded-full hover:opacity-90 transition-opacity"
               >
-                Contact
+                Connect on LinkedIn
               </motion.a>
             </div>
           </div>
@@ -120,10 +123,15 @@ function AppContent() {
 
 function NavLink({ to, currentPath, children }) {
   const isActive = currentPath === to;
+  
+  const handleClick = () => {
+    window.scrollTo(0, 0);
+  };
 
   return (
     <Link
       to={to}
+      onClick={handleClick}
       className={`relative px-4 py-2 text-sm font-medium transition-colors ${
         isActive ? 'text-stone' : 'text-coffee hover:text-stone'
       }`}

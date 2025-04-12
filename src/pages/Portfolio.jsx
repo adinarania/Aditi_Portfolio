@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { useEffect } from 'react';
 import PDFViewer from '../components/PDFViewer';
 
 const Portfolio = () => {
@@ -62,8 +63,73 @@ const Portfolio = () => {
         { label: "Audience", value: "Youth" },
         { label: "Focus", value: "Health" }
       ]
+    },
+    {
+      id: 5,
+      title: "Spotify Algorithms",
+      subtitle: "AI-Driven Personalization Analysis",
+      description: "Conducted an in-depth analysis of Spotify's recommendation algorithms and personalization features, examining how AI shapes user experience and engagement. The study explored the balance between algorithmic curation and user discovery.",
+      pdfUrl: "/pdfs/spotify-analysis.pdf",
+      pdfTitle: "Spotify - AI-Driven Personalization Study",
+      image: "/images/spotify.jpg",
+      tags: ["AI Analysis", "UX Research", "Digital Strategy"],
+      metrics: [
+        { label: "Platform", value: "Spotify" },
+        { label: "Focus", value: "AI" },
+        { label: "Approach", value: "Analysis" }
+      ]
+    },
+    {
+      id: 6,
+      title: "Sustainable Fashion",
+      subtitle: "Brand Storytelling Strategy",
+      description: "Developed a comprehensive storytelling strategy for an emerging sustainable fashion brand, focusing on transparent supply chain communication and ethical production narratives that resonate with environmentally conscious consumers.",
+      pdfUrl: "/pdfs/sustainable-fashion.pdf",
+      pdfTitle: "Sustainable Fashion - Brand Narrative Strategy",
+      image: "/images/sustainable.jpg",
+      tags: ["Sustainability", "Brand Narrative", "Consumer Engagement"],
+      metrics: [
+        { label: "Industry", value: "Fashion" },
+        { label: "Focus", value: "Ethics" },
+        { label: "Approach", value: "Storytelling" }
+      ]
+    },
+    {
+      id: 7,
+      title: "FinTech Rebrand",
+      subtitle: "Digital Banking Experience",
+      description: "Led the strategic rebranding initiative for a digital banking platform seeking to appeal to Gen Z and Millennial audiences. Developed positioning, messaging frameworks, and user journey maps to enhance the brand experience across all touchpoints.",
+      pdfUrl: "/pdfs/fintech-rebrand.pdf",
+      pdfTitle: "FinTech - Digital Banking Rebrand Strategy",
+      image: "/images/fintech.jpg",
+      tags: ["Rebranding", "Digital Experience", "Financial Services"],
+      metrics: [
+        { label: "Sector", value: "FinTech" },
+        { label: "Audience", value: "Gen Z" },
+        { label: "Focus", value: "Experience" }
+      ]
+    },
+    {
+      id: 8,
+      title: "Virtual Reality Museum",
+      subtitle: "Immersive Culture Experience",
+      description: "Conceptualized and developed a strategic framework for a virtual reality museum experience, creating accessible cultural engagement for global audiences. The project explored the intersection of technology and cultural preservation.",
+      pdfUrl: "/pdfs/vr-museum.pdf",
+      pdfTitle: "VR Museum - Immersive Experience Strategy",
+      image: "/images/vr-museum.jpg",
+      tags: ["Virtual Reality", "Cultural Engagement", "Digital Innovation"],
+      metrics: [
+        { label: "Technology", value: "VR" },
+        { label: "Sector", value: "Culture" },
+        { label: "Innovation", value: "High" }
+      ]
     }
   ];
+
+  // Scroll to top on component mount
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="bg-cream min-h-screen">
@@ -188,12 +254,24 @@ const Portfolio = () => {
             <h2 className="font-display text-4xl md:text-5xl mb-8">
               Let's Create Something Impactful Together
             </h2>
-            <a
-              href="mailto:contact@example.com"
-              className="inline-block px-8 py-3 border-2 border-white hover:bg-white hover:text-stone transition-colors duration-300 tracking-widest uppercase text-sm"
-            >
-              Get in Touch
-            </a>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <a
+                href="mailto:aditi.narania@gmail.com"
+                className="inline-block px-8 py-3 border-2 border-white hover:bg-white hover:text-stone transition-colors duration-300 tracking-widest uppercase text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2"
+                aria-label="Send Email"
+              >
+                Get in Touch
+              </a>
+              <a
+                href="http://www.linkedin.com/in/narania"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-8 py-3 bg-white text-stone hover:bg-transparent hover:text-white border-2 border-white transition-colors duration-300 tracking-widest uppercase text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2"
+                aria-label="Visit LinkedIn Profile"
+              >
+                LinkedIn Profile
+              </a>
+            </div>
           </motion.div>
         </div>
       </section>
